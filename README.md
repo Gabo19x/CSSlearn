@@ -1,2 +1,2 @@
-# CSSlearn
-Web page on how CSS works
+# Pagina web sobre aprendizaje de CSS
+
