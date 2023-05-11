@@ -1,1 +1,29 @@
 @import 'animate.css';
+
+// Globales
+a { text-decoration: none; }
+p { font-size: 16px; }
+code { 
+    font-size: 18px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+// Navegacion
+%template_navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    nav a {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        border-radius: 5px;
+        
+    }
+}
+
+header { @extend %template_navegacion; }
+footer { @extend %template_navegacion; }
