@@ -1,20 +1,27 @@
+@import "./styleindex.scss";
+
 // Pagina gradiente
 main{
     display: block;
-}
+    
+    h1 {
+        margin: $margen;
+        width: auto;
+    }
 
-main figure{
-    width: auto;
-    height: 300px;
-    border-radius: 5px;
-    margin: 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    code{
-        padding: 0.2rem;
+    figure{
+        width: auto;
+        height: 300px;
+        border-radius: $radioBorde;
+        margin: $margen;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        code{
+            padding: 0.2rem;
+        }
     }
 }
 

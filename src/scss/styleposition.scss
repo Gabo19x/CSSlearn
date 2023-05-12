@@ -1,0 +1,68 @@
+@import "./styleindex.scss";
+
+// Pagina de posiciones
+main {
+    display: block;
+
+    h1 {
+        margin: $margen;
+    }
+
+    section {
+        margin-bottom: 30rem;
+        margin-top: 20rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        figure {
+            width: 200px;
+            height: 200px;
+            border-radius: $radioBorde;
+
+            background-color: rgb(56, 56, 56);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            code {
+                color: white;
+            }
+        }
+    }
+    
+}
+
+.Imagen2 {
+    position: relative;
+    bottom: -10rem;
+    left: 8rem;
+    background-color: rgb(23, 0, 124);
+}
+
+.Imagen3 {
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    background-color: rgb(97, 107, 9);
+}
+
+.Imagen4 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 12rem;
+    left: 5%;
+    background-color: rgb(5, 145, 58);
+}
+
+.Imagen5 {
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top: 400px;
+
+    background-color: rgb(153, 5, 5);
+}
