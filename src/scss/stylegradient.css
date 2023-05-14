@@ -20,6 +20,10 @@ code {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+body {
+  background-image: linear-gradient(to top, rgb(132, 133, 201), rgb(132, 133, 201));
+}
+
 footer, header {
   display: flex;
   justify-content: center;

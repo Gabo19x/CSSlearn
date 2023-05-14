@@ -43,19 +43,19 @@ main {
 main h1 {
   margin: 1rem;
 }
+main p {
+  margin: 1rem;
+}
 main section {
-  margin-bottom: 30rem;
-  margin-top: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 main section figure {
-  width: 200px;
-  height: 200px;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(39, 0, 71);
   border-radius: 5px;
-  background-color: rgb(56, 56, 56);
-  box-shadow: 15px 15px 10px black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,38 +63,31 @@ main section figure {
 main section figure code {
   color: white;
 }
-
-.Imagen1 .Imagen2 .Imagen3 {
-  box-shadow: 5px 5px 10px black;
+main section figure p {
+  color: white;
+  padding: 0 1rem;
 }
 
-.Imagen2 {
-  position: relative;
-  bottom: -10rem;
-  left: 8rem;
-  background-color: rgb(23, 0, 124);
+.Sombra1 {
+  box-shadow: 15px 15px;
 }
 
-.Imagen3 {
-  position: absolute;
-  top: 2rem;
-  right: 8rem;
-  background-color: rgb(97, 107, 9);
+.Sombra2 {
+  box-shadow: 15px 15px 10px white;
 }
 
-.Imagen4 {
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  top: 12rem;
-  left: 5%;
-  background-color: rgb(5, 145, 58);
+.Sombra3 {
+  box-shadow: 15px 15px 10px 20px gold;
 }
 
-.Imagen5 {
-  width: 100px;
-  height: 100px;
-  position: sticky;
-  top: 400px;
-  background-color: rgb(153, 5, 5);
-}/*# sourceMappingURL=styleposition.css.map */
+.Sombra4 {
+  box-shadow: 0 3rem 2rem black;
+}
+
+.Sombra5 {
+  box-shadow: 30px 0 3rem olive, 0 30px 3rem olivedrab, -30px 0 3rem olive, 0 -30px 3rem olivedrab;
+}
+
+.Sombra6 {
+  box-shadow: 60px 60px 10px white;
+}/*# sourceMappingURL=styleshadow.css.map */

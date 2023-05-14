@@ -22,6 +22,7 @@ main {
             border-radius: $radioBorde;
 
             background-color: rgb(56, 56, 56);
+            box-shadow: 15px 15px 10px black;
 
             display: flex;
             align-items: center;
@@ -33,6 +34,10 @@ main {
         }
     }
     
+}
+
+.Imagen1 .Imagen2 .Imagen3 {
+    box-shadow: 5px 5px 10px black;
 }
 
 .Imagen2 {

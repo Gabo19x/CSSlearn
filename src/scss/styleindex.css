@@ -4,7 +4,7 @@ a {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
@@ -21,7 +21,7 @@ code {
 }
 
 body {
-  background-image: linear-gradient(to top, rgb(94, 255, 0), rgb(109, 190, 2));
+  background-image: linear-gradient(to top, rgb(132, 133, 201), rgb(132, 133, 201));
 }
 
 footer, header {
