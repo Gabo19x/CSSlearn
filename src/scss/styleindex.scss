@@ -37,7 +37,7 @@ body {
         background-color: black;
         color: white;
         padding: 1rem;
-        border-radius: 5px;
+        border-radius: $radioBorde;
         
     }
 }
@@ -49,4 +49,10 @@ footer { @extend %template_navegacion; }
 .Temario {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    a {
+        background-color: black;
+        color: white;
+        border-radius: $radioBorde;
+    }
 }

@@ -35,10 +35,15 @@ footer nav a, header nav a {
   background-color: black;
   color: white;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .Temario {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.Temario a {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }/*# sourceMappingURL=styleindex.css.map */
