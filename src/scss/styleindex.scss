@@ -2,7 +2,7 @@
 
 // Variables
 $margen: 1rem;
-$radioBorde: 5px; 
+$radioBorde: 10px; 
 
 // Globales
 a { text-decoration: none; }
@@ -13,6 +13,7 @@ h1 {
     text-transform: uppercase; 
     font-weight: 800;
     font-family: cursive;
+    margin: $margen;
 }
 
 code { 
@@ -43,3 +44,9 @@ body {
 
 header { @extend %template_navegacion; }
 footer { @extend %template_navegacion; }
+
+// Pagina principal
+.Temario {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

@@ -1,0 +1,31 @@
+@import "./styleindex.scss";
+
+// Pagina de decoracion de textos
+main{
+    display: block;
+
+    p {
+        margin: 3rem 5rem;
+        font-size: 25px;
+        line-height: 3rem;
+
+        color: white;
+        background-color: black;
+        padding: $margen * 3;
+        border-radius: $radioBorde;
+
+        code { font-size: 27px; }
+        span { 
+            font-size: 27px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(158, 65, 65);
+        }
+    }
+}
+
+.Texto1 { text-decoration: underline red; }
+.Texto2 { text-decoration: underline dotted red; }
+.Texto3 { text-decoration: underline wavy red; }
+.Texto4 { text-decoration: underline overline red; }
+.Texto5 { text-decoration: underline dashed red; }
+.Texto6 { text-decoration: underline double red; }

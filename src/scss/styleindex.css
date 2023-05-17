@@ -12,6 +12,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 800;
   font-family: cursive;
+  margin: 1rem;
 }
 
 code {
@@ -35,4 +36,9 @@ footer nav a, header nav a {
   color: white;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.Temario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }/*# sourceMappingURL=styleindex.css.map */
