@@ -4,7 +4,8 @@ a {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
+  margin: 1rem;
 }
 
 h1 {
@@ -12,6 +13,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 800;
   font-family: cursive;
+  margin: 1rem;
 }
 
 code {
@@ -34,7 +36,17 @@ footer nav a, header nav a {
   background-color: black;
   color: white;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.Temario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Temario a {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }
 
 main {
@@ -47,7 +59,7 @@ main h1 {
 main figure {
   width: auto;
   height: 300px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 1rem;
   display: flex;
   align-items: center;
