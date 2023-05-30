@@ -100,3 +100,31 @@ main{
     border: 2px solid rgb(255, 0, 0);
     color: rgb(255, 0, 0);
 }
+
+.Elemento1 {
+    font-size: 22px;
+    
+    &::after {
+        content: " After y va despues.";
+        color: green;
+        font-weight: bolder;
+    }
+    
+    &::before {
+        content: "Before y va antes. ";
+        color: yellow;
+        font-weight: bolder;
+    }    
+}
+
+.Elemento2 {
+    font-size: 22px;
+
+    &::first-letter {
+        font-size: 42px
+    }
+
+    &::first-line {
+        color: rgb(19, 19, 19);
+    }
+}

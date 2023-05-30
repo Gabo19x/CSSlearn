@@ -131,4 +131,28 @@ main section form .Box {
 .Req:required {
   border: 2px solid rgb(255, 0, 0);
   color: rgb(255, 0, 0);
+}
+
+.Elemento1 {
+  font-size: 22px;
+}
+.Elemento1::after {
+  content: " After y va despues.";
+  color: green;
+  font-weight: bolder;
+}
+.Elemento1::before {
+  content: "Before y va antes. ";
+  color: yellow;
+  font-weight: bolder;
+}
+
+.Elemento2 {
+  font-size: 22px;
+}
+.Elemento2::first-letter {
+  font-size: 42px;
+}
+.Elemento2::first-line {
+  color: rgb(19, 19, 19);
 }/*# sourceMappingURL=styleclasses.css.map */
