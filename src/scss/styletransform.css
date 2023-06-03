@@ -1,0 +1,103 @@
+@import 'animate.css';
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: cursive;
+  margin: 1rem;
+}
+
+code {
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, rgb(132, 133, 201), rgb(132, 133, 201));
+}
+
+footer, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+footer nav a, header nav a {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.Temario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Temario a {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+main {
+  display: block;
+}
+main section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  row-gap: 7rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+main section figure {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(0, 71, 18);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section figure code {
+  color: white;
+}
+main section figure p {
+  color: white;
+  padding: 0 1rem;
+}
+
+.T1 {
+  transform: translateX(50px);
+}
+
+.T2 {
+  transform: translateY(-50px);
+}
+
+.T3 {
+  transform: rotate(45deg);
+}
+
+.T4 {
+  transform: scale(0.8);
+}
+
+.T5 {
+  transform: skewX(30deg) skewY(-20deg);
+}
+
+.T6 {
+  transform: translateY(-10px) rotate(180deg) scale(1.2) skewX(-10deg);
+}/*# sourceMappingURL=styletransform.css.map */

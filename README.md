@@ -5,3 +5,4 @@
 3. **Sombra:** la forma de crear y editar una sombra.
 4. **Decoracion de textos:** los diferentes tipos de decoracion.
 5. **Pseudoclases y pseudoelementos:** algunos de los diferentes tipos de pseudoclases y pseudoelementos.
+6. **Transform:** algunas propiedades para usar con transform.
