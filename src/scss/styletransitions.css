@@ -1,0 +1,151 @@
+@import 'animate.css';
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: cursive;
+  margin: 1rem;
+}
+
+code {
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, rgb(132, 133, 201), rgb(132, 133, 201));
+}
+
+footer, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+footer nav a, header nav a {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.Temario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Temario a {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+main {
+  display: block;
+}
+main h1 {
+  margin: 1rem;
+  width: auto;
+}
+main figure {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(102, 102, 102);
+}
+main figure code {
+  padding: 0.8rem;
+}
+
+.Figura1 {
+  background-color: aqua;
+  transition: all 2s 0.1s ease;
+}
+.Figura1:hover {
+  background-color: rgb(1, 150, 150);
+  transform: translateX(70vw);
+}
+
+.Figura2 {
+  background-color: rgb(134, 190, 1);
+  transition: all 2s 0.1s ease-in;
+}
+.Figura2:hover {
+  background-color: rgb(109, 156, 0);
+  transform: translateX(70vw);
+}
+
+.Figura3 {
+  background-color: rgb(194, 216, 0);
+  transition: all 2s 0.1s ease-out;
+}
+.Figura3:hover {
+  background-color: rgb(144, 160, 0);
+  transform: translateX(70vw);
+}
+
+.Figura4 {
+  background-color: rgb(255, 81, 0);
+  transition: all 2s 0.1s ease-in-out;
+}
+.Figura4:hover {
+  background-color: rgb(167, 53, 0);
+  transform: translateX(70vw);
+}
+
+.Figura5 {
+  background-color: rgb(225, 0, 255);
+  transition: all 2s 0.1s linear;
+}
+.Figura5:hover {
+  background-color: rgb(144, 1, 163);
+  transform: translateX(70vw);
+}
+
+.Figura6 {
+  width: 300px;
+  background-color: bisque;
+  transition: all 5s 0.1s ease-in;
+}
+.Figura6:hover {
+  background-color: rgb(219, 180, 132);
+  width: 70vw;
+}
+
+.Figura7 code {
+  font-size: 18px;
+  transition: all 2s 0.1s linear;
+}
+.Figura7 p {
+  font-size: 18px;
+  transition: all 2s 0.1s linear;
+}
+.Figura7:hover code {
+  color: rgb(58, 0, 0);
+  font-size: 32px;
+}
+.Figura7:hover p {
+  font-size: 28px;
+}
+
+.Figura8 {
+  transform: rotate(0deg);
+  transition: transform 4s 1.5s ease-in-out;
+}
+.Figura8:hover {
+  transform: rotate(360deg);
+}/*# sourceMappingURL=styletransitions.css.map */

@@ -1,0 +1,123 @@
+@import "./styleindex.scss";
+
+$view: 70vw;
+
+// Pagina transiciones
+main{
+    display: block;
+    
+    h1 {
+        margin: $margen;
+        width: auto;
+    }
+
+    figure{
+        width: 300px;
+        height: 300px;
+        border-radius: $radioBorde;
+        margin: $margen;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(102, 102, 102);
+    
+        code{
+            padding: 0.8rem;
+        }
+    }
+}
+
+.Figura1 { 
+    background-color: aqua;
+    transition: all 2s 0.1s ease;
+
+    &:hover{
+        background-color: rgb(1, 150, 150);
+        transform: translateX($view);
+    }
+}
+
+.Figura2 { 
+    background-color: rgb(134, 190, 1);
+    transition: all 2s 0.1s ease-in;
+
+    &:hover{
+        background-color: rgb(109, 156, 0);
+        transform: translateX($view);
+    }
+}
+
+.Figura3 { 
+    background-color: rgb(194, 216, 0);
+    transition: all 2s 0.1s ease-out;
+
+    &:hover{
+        background-color: rgb(144, 160, 0);
+        transform: translateX($view);
+    }
+}
+
+.Figura4 { 
+    background-color: rgb(255, 81, 0);
+    transition: all 2s 0.1s ease-in-out;
+
+    &:hover{
+        background-color: rgb(167, 53, 0);
+        transform: translateX($view);
+    }
+}
+
+.Figura5 { 
+    background-color: rgb(225, 0, 255);
+    transition: all 2s 0.1s linear;
+
+    &:hover{
+        background-color: rgb(144, 1, 163);
+        transform: translateX($view);
+    }
+}
+
+
+.Figura6 { 
+    width: 300px;
+    background-color: bisque;
+    transition: all 5s 0.1s ease-in;
+
+    &:hover{
+        background-color: rgb(219, 180, 132);
+        width: $view;
+    }
+}
+
+.Figura7 { 
+    code {
+        font-size: 18px;
+        transition: all 2s 0.1s linear;
+    } 
+
+    p{
+        font-size: 18px;
+        transition: all 2s 0.1s linear; 
+    }
+
+    &:hover{
+        code{
+            color: rgb(58, 0, 0);
+            font-size: 32px;
+        }
+
+        p{
+            font-size: 28px;
+        }
+    }
+}
+.Figura8 { 
+    transform: rotate(0deg);
+    transition: transform 4s 1.5s ease-in-out;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

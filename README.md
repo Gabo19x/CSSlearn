@@ -6,3 +6,4 @@
 4. **Decoracion de textos:** los diferentes tipos de decoracion.
 5. **Pseudoclases y pseudoelementos:** algunos de los diferentes tipos de pseudoclases y pseudoelementos.
 6. **Transform:** algunas propiedades para usar con transform.
+7. **Transiciones:** ejemplos visuales de como usar transition.
