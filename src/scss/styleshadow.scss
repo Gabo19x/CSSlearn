@@ -12,16 +12,14 @@ main {
         figure {
             height: 300px;
             width: 300px;
-            background-color: rgb(39, 0, 71);
+            background-color: $colorRojo;
             border-radius: $radioBorde;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            code { color: white; }
             p { 
-                color: white; 
                 padding: 0 $margen;
             }
         }
@@ -29,8 +27,8 @@ main {
 }
 
 .Sombra1 { box-shadow: 15px 15px; }
-.Sombra2 { box-shadow: 15px 15px 10px white; }
-.Sombra3 { box-shadow: 15px 15px 10px 20px gold; }
+.Sombra2 { box-shadow: 15px 15px 10px black; }
+.Sombra3 { box-shadow: 15px 15px 10px 20px black; }
 .Sombra4 { box-shadow: 0 3rem 2rem black; }
-.Sombra5 { box-shadow: 30px 0 3rem olive, 0 30px 3rem olivedrab, -30px 0 3rem olive, 0 -30px 3rem olivedrab; }
-.Sombra6 { box-shadow: 60px 60px 10px white; }
+.Sombra5 { box-shadow: 30px 0 3rem black, 0 30px 3rem $colorTexto, -30px 0 3rem black, 0 -30px 3rem $colorTexto; }
+.Sombra6 { box-shadow: 60px 60px 10px black; }

@@ -20,8 +20,8 @@ main {
             width: 200px;
             height: 200px;
             border-radius: $radioBorde;
-
-            background-color: rgb(56, 56, 56);
+            // rgb(56, 56, 56)
+            background-color: $colorTerciario;
             box-shadow: 15px 15px 10px black;
 
             display: flex;
@@ -29,7 +29,7 @@ main {
             justify-content: center;
     
             code {
-                color: white;
+                color: $colorBlanco;
             }
         }
     }
@@ -44,14 +44,14 @@ main {
     position: relative;
     bottom: -10rem;
     left: 8rem;
-    background-color: rgb(23, 0, 124);
+    background-color: $colorAzul;
 }
 
 .Imagen3 {
     position: absolute;
     top: 2rem;
     right: 8rem;
-    background-color: rgb(97, 107, 9);
+    background-color: $colorVerde;
 }
 
 .Imagen4 {
@@ -60,7 +60,7 @@ main {
     position: fixed;
     top: 12rem;
     left: 5%;
-    background-color: rgb(5, 145, 58);
+    background-color: $colorRojo;
 }
 
 .Imagen5 {
@@ -69,5 +69,5 @@ main {
     position: sticky;
     top: 400px;
 
-    background-color: rgb(153, 5, 5);
+    background-color: $colorAmarillo;
 }

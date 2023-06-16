@@ -1,6 +1,12 @@
 @import "./styleindex.scss";
 
+// Variables extra
 $view: 70vw;
+
+$colorAmarilloOscuro: #9c6300;
+$colorRojoOscuro: #741212;
+$colorVerdeOscuro: #588b19;
+$colorAzulOscuro: #003fa3;
 
 // Pagina transiciones
 main{
@@ -27,7 +33,7 @@ main{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: rgb(102, 102, 102);
+        background-color: $colorTerciario;
     
         code{
             padding: 0.8rem;
@@ -35,7 +41,7 @@ main{
     }
 }
 
-// Clsaes individuales y su respectiva animaciones
+// Clases individuales y su respectiva animaciones
 // Figura uno
 .Figura1 { 
     animation-duration: 5s;
@@ -44,13 +50,13 @@ main{
 }
 
 @keyframes AnimUno {
-    from { background-color: rgb(207, 115, 73); }
-    to { background-color: rgb(146, 47, 1); }
+    from { background-color: $colorAmarillo; }
+    to { background-color: $colorAmarilloOscuro; }
 }
 
 // Figura dos
 .Figura2 { 
-    background-color: rgb(150, 184, 28);
+    background-color: $colorRojo;
 
     animation-duration: 2s;
     animation-name: AnimDos;
@@ -75,13 +81,13 @@ main{
 @keyframes AnimTres {
     50% { 
         transform: rotate(180deg); 
-        background-color: purple;
+        background-color: $colorVerde;
     }
 }
 
 // Figura cuatro
 .Figura4 { 
-    background-color: rgb(135, 179, 179);
+    background-color: $colorAzul;
 
     animation-duration: 7s;
     animation-name: AnimCuatro;
@@ -95,7 +101,7 @@ main{
 
 // Figura cinco
 .Figura5 { 
-    background-color: rgb(137, 202, 38);
+    background-color: $colorAmarillo;
 
     animation-duration: 2s;
     animation-name: AnimCinco;
@@ -105,13 +111,13 @@ main{
 @keyframes AnimCinco {
     50% { 
         width: 800px;
-        background-color: rgb(202, 38, 38); 
+        background-color: $colorRojo; 
     }
 }
 
 // Figura seis
 .Figura6 { 
-    background-color: rgb(84, 84, 253);
+    background-color: $colorVerde;
 
     animation-duration: 4s;
     animation-name: AnimSeis;
@@ -121,18 +127,18 @@ main{
 @keyframes AnimSeis {
     20% {
         transform: skewY(-10deg);
-        background-color: rgb(121, 121, 255);
+        background-color: $colorVerdeOscuro;
     }
     40% {
         transform: skewY(10deg);
-        background-color: rgb(84, 84, 253);
+        background-color: $colorVerde;
     }
     60% {
         transform: skewY(-10deg);
-        background-color: rgb(121, 121, 255);
+        background-color: $colorVerdeOscuro;
     }
     80% {
         transform: skewY(10deg);
-        background-color: rgb(84, 84, 253);
+        background-color: $colorVerde;
     }
 }
