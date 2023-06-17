@@ -43,8 +43,9 @@ main{
 
 // Clases individuales y su respectiva animaciones
 // Figura uno
-.Figura1 { 
-    animation-duration: 5s;
+.Figura1 { animation-duration: 5s; }
+
+.Animar_f1 {
     animation-name: AnimUno;
     animation-direction: normal;
 }
@@ -55,9 +56,9 @@ main{
 }
 
 // Figura dos
-.Figura2 { 
-    background-color: $colorRojo;
+.Figura2 { background-color: $colorRojo; }
 
+.Animar_f2 {
     animation-duration: 2s;
     animation-name: AnimDos;
 }
@@ -69,7 +70,9 @@ main{
 }
 
 // Figura tres
-.Figura3 { 
+//.Figura3 {}
+
+.Animar_f3 {
     animation-duration: 5s;
     animation-name: AnimTres;
 
@@ -86,9 +89,9 @@ main{
 }
 
 // Figura cuatro
-.Figura4 { 
-    background-color: $colorAzul;
+.Figura4 { background-color: $colorAzul; }
 
+.Animar_f4 {
     animation-duration: 7s;
     animation-name: AnimCuatro;
     animation-fill-mode: forwards;
@@ -100,9 +103,9 @@ main{
 }
 
 // Figura cinco
-.Figura5 { 
-    background-color: $colorAmarillo;
+.Figura5 { background-color: $colorAmarillo; }
 
+.Animar_f5 {
     animation-duration: 2s;
     animation-name: AnimCinco;
     animation-iteration-count: 5;
