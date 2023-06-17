@@ -8,6 +8,7 @@ main{
         display: grid;
         grid-template-columns: 1fr;
         gap: $margen;
+        margin: 0 $margen;
 
         a {
             background-color: $colorTexto;
@@ -66,7 +67,7 @@ main{
 }
 
 .Final {
-    margin-top: 30vw;
+    margin-top: 20vw;
     
     p {
         font-size: 22px; 

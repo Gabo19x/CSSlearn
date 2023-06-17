@@ -11,8 +11,7 @@ $colorTerciario: #5c5c5c;
 $colorBlanco: #FFFFFF;
 $colorNegro: #000000;
 
-$colorTexto: #141414;
-
+$colorTexto: #0c0c0c;
 
 $colorAmarillo: #C97F00;
 $colorRojo: #AA2323;
@@ -22,7 +21,16 @@ $colorAzul: #135acc;
 $colorCuaternario: #BDBDBD;
 
 // Globales
-a { text-decoration: none; background-color: $colorPrimario; }
+a { 
+    background-color: $colorTexto;
+    color: $colorBlanco;
+    padding: 1rem;
+    border-radius: $radioBorde;
+    text-decoration: none; 
+}
+
+a:hover { background-color: $colorNegro; }
+
 p { 
     font-size: 18px; 
     margin: $margen;
@@ -31,7 +39,6 @@ p {
 
 h1 { 
     font-size: 50px; 
-    text-transform: uppercase; 
     font-weight: 800;
     margin: $margen;
     color: $colorTexto;
@@ -46,6 +53,23 @@ code {
 
 body {
     background-color: $colorSecundario;
+    margin: 0;
+}
+%template_linea {
+    background-color: $colorPrimario;
+    padding: $margen;
+}
+
+.Linea {
+    @extend %template_linea;
+    height: 20vw;
+    margin: 0 0 3rem 0;
+}
+
+.Linea_footer {
+    @extend %template_linea;
+    height: 5vw;
+    margin: $margen 0 0 0;
 }
 
 // Navegacion
@@ -56,11 +80,13 @@ body {
     margin: 3rem;
 
     nav a {
-        background-color: $colorPrimario;
-        color: $colorNegro;
+        background-color: $colorTexto;
+        color: $colorBlanco;
         padding: 1rem;
         border-radius: $radioBorde;
-        
+        text-transform: uppercase;
+
+        &:hover { border: $colorBlanco 3px solid; }
     }
 }
 
@@ -70,13 +96,24 @@ footer { @extend %template_navegacion; }
 // Pagina principal
 .Temario {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
-    column-gap: 1rem;
+    column-gap: $margen;
+
+    margin: 0 $margen;
+    padding: $margen;
 
     a {
-        background-color: $colorPrimario;
-        color: $colorNegro;
+        background-color: $colorTexto;
+        color: $colorBlanco;
         border-radius: $radioBorde;
+
+        padding: $margen;
+        
     }
 }
+
+.Boton_rojo:hover { background-color: $colorRojo; }
+.Boton_amarillo:hover { background-color: $colorAmarillo; }
+.Boton_verde:hover { background-color: $colorVerde; }
+.Boton_azul:hover { background-color: $colorAzul; }
