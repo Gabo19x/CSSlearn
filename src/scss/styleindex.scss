@@ -27,9 +27,11 @@ a {
     padding: 1rem;
     border-radius: $radioBorde;
     text-decoration: none; 
+
+    &:hover { background-color: $colorNegro; }
 }
 
-a:hover { background-color: $colorNegro; }
+
 
 p { 
     font-size: 22px; 
@@ -65,6 +67,21 @@ body {
     @extend %template_linea;
     height: 20vw;
     margin: 0 0 3rem 0;
+
+    .Boton_enlace {
+        border: $colorCuaternario 2px solid;
+        background-color: $colorPrimario;
+        color: $colorBlanco;
+        margin: 2rem $margen;
+        height: 5vw;
+        transition: all 1s 0.1s ease; 
+    
+        &:hover {
+            color: $colorNegro;
+            background-color: $colorCuaternario;
+            
+        }
+    }
 }
 
 .Linea_footer {

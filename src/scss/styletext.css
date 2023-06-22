@@ -6,7 +6,6 @@ a {
   border-radius: 10px;
   text-decoration: none;
 }
-
 a:hover {
   background-color: #000000;
 }
@@ -44,6 +43,18 @@ body {
 .Linea {
   height: 20vw;
   margin: 0 0 3rem 0;
+}
+.Linea .Boton_enlace {
+  border: #BDBDBD 2px solid;
+  background-color: #455A64;
+  color: #FFFFFF;
+  margin: 2rem 1rem;
+  height: 5vw;
+  transition: all 1s 0.1s ease;
+}
+.Linea .Boton_enlace:hover {
+  color: #000000;
+  background-color: #BDBDBD;
 }
 
 .Linea_footer {
