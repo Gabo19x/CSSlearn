@@ -1,6 +1,6 @@
 @import "./styleindex.scss";
 
-// Pagina de pseudoclases
+// Pagina de pseudoclases y pseudoelementos
 main{
     display: block;
 
@@ -96,6 +96,7 @@ main{
     color: $colorRojo;
 }
 
+// Este lemento afectado por 2 pseudoelementos
 .Elemento1 {
     font-size: 22px;
     
@@ -112,6 +113,7 @@ main{
     }    
 }
 
+// Este lemento afectado por 2 pseudoelementos
 .Elemento2 {
     font-size: 22px;
 

@@ -1,6 +1,6 @@
 @import "./styleindex.scss";
 
-// Pafina sombras
+// Pafina de transform
 main {
     display: block;
 
@@ -32,6 +32,7 @@ main {
     }
 }
 
+// Clases
 .T1 { transform: translateX(50px); }
 .T2 { transform: translateY(-50px); }
 .T3 { transform: rotate(45deg); }

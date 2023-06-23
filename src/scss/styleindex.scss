@@ -31,8 +31,6 @@ a {
     &:hover { background-color: $colorNegro; }
 }
 
-
-
 p { 
     font-size: 22px; 
     margin: $margen;
@@ -63,9 +61,10 @@ body {
     padding: $margen;
 }
 
+// encabezado de las paginas
 .Linea {
     @extend %template_linea;
-    height: 20vw;
+    height: 20rem;
     margin: 0 0 3rem 0;
 
     .Boton_enlace {

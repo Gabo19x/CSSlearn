@@ -36,6 +36,8 @@ main{
     }
 }
 
+// Clases con sus respectivas transiciones
+// Figura 1
 .Figura1 { 
     background-color: $colorAmarillo;
     transition: all 2s 0.1s ease;
@@ -46,6 +48,7 @@ main{
     }
 }
 
+// Figura 2
 .Figura2 { 
     background-color: $colorRojo;
     transition: all 2s 0.1s ease-in;
@@ -56,6 +59,7 @@ main{
     }
 }
 
+// Figura 3
 .Figura3 { 
     background-color: $colorVerde;
     transition: all 2s 0.1s ease-out;
@@ -66,6 +70,7 @@ main{
     }
 }
 
+// Figura 4
 .Figura4 { 
     background-color: $colorAzul;
     transition: all 2s 0.1s ease-in-out;
@@ -76,6 +81,7 @@ main{
     }
 }
 
+// Figura 5
 .Figura5 { 
     background-color: $colorAmarillo;
     transition: all 2s 0.1s linear;
@@ -86,7 +92,7 @@ main{
     }
 }
 
-
+// Figura 6
 .Figura6 { 
     width: 300px;
     background-color: $colorRojo;
@@ -98,6 +104,7 @@ main{
     }
 }
 
+// Figura 7
 .Figura7 { 
     background-color: $colorVerde;
     code {
@@ -121,6 +128,8 @@ main{
         }
     }
 }
+
+// Figura 8
 .Figura8 { 
     transform: rotate(0deg);
     transition: transform 4s 1.5s ease-in-out;
