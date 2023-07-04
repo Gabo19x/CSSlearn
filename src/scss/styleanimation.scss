@@ -46,8 +46,10 @@ main{
 .Figura1 { animation-duration: 5s; }
 
 .Animar_f1 {
-    animation-name: AnimUno;
-    animation-direction: normal;
+    animation: {
+        name: AnimUno;
+        direction: normal;
+    }; // Este es un shorthands
 }
 
 @keyframes AnimUno {
@@ -59,8 +61,10 @@ main{
 .Figura2 { background-color: $colorRojo; }
 
 .Animar_f2 {
-    animation-duration: 2s;
-    animation-name: AnimDos;
+    animation: {
+        duration: 2s;
+        name: AnimDos;
+    };
 }
 
 @keyframes AnimDos {
@@ -73,8 +77,10 @@ main{
 //.Figura3 {}
 
 .Animar_f3 {
-    animation-duration: 5s;
-    animation-name: AnimTres;
+    animation: {
+        duration: 5s;
+        name: AnimTres;
+    };
 
     &:hover{
         animation-play-state: paused;
@@ -92,9 +98,12 @@ main{
 .Figura4 { background-color: $colorAzul; }
 
 .Animar_f4 {
-    animation-duration: 7s;
-    animation-name: AnimCuatro;
-    animation-fill-mode: forwards;
+    animation: {
+        duration: 7s;
+        name: AnimCuatro;
+        fill-mode: forwards;
+    };
+    
 }
 
 @keyframes AnimCuatro {
@@ -106,9 +115,11 @@ main{
 .Figura5 { background-color: $colorAmarillo; }
 
 .Animar_f5 {
-    animation-duration: 2s;
-    animation-name: AnimCinco;
-    animation-iteration-count: 5;
+    animation: {
+        duration: 2s;
+        name: AnimCinco;
+        iteration-count: 5;
+    };
 }
 
 @keyframes AnimCinco {
@@ -122,9 +133,11 @@ main{
 .Figura6 { 
     background-color: $colorVerde;
 
-    animation-duration: 4s;
-    animation-name: AnimSeis;
-    animation-iteration-count: infinite;
+    animation: {
+        duration: 4s;
+        name: AnimSeis;
+        iteration-count: infinite;
+    };
 }
 
 @keyframes AnimSeis {

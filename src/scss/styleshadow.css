@@ -132,12 +132,19 @@ main section figure p {
   padding: 0 1rem;
 }
 
+/* MIXIN Sombra
+    Genera una sombra segun unos parametros
+    @params 
+        posX: posicion x. posY: posicion en y. 
+        deg: el degradado. cre: valor de crecimiento.
+        color.
+*/
 .Sombra1 {
-  box-shadow: 15px 15px;
+  box-shadow: 15px 15px 0 0 black;
 }
 
 .Sombra2 {
-  box-shadow: 15px 15px 10px black;
+  box-shadow: 15px 15px 10px 0 black;
 }
 
 .Sombra3 {
@@ -145,13 +152,13 @@ main section figure p {
 }
 
 .Sombra4 {
-  box-shadow: 0 3rem 2rem black;
+  box-shadow: 0 3rem 2rem 0 black;
 }
 
 .Sombra5 {
-  box-shadow: 30px 0 3rem black, 0 30px 3rem #0c0c0c, -30px 0 3rem black, 0 -30px 3rem #0c0c0c;
+  box-shadow: 30px 0 3rem, 0 30px 3rem #5c5c5c, -30px 0 3rem, 0 -30px 3rem #5c5c5c;
 }
 
 .Sombra6 {
-  box-shadow: 60px 60px 10px black;
+  box-shadow: 60px 60px 10px 0 black;
 }/*# sourceMappingURL=styleshadow.css.map */
