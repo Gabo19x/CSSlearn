@@ -10,5 +10,6 @@
 6. **Transform:** algunas propiedades para usar con transform.
 7. **Transiciones:** ejemplos visuales de como usar transition.
 8. **Animaciones:** ejemplos visuales de su forma de uso.
+9. **Overflow:** ejemplos visuales pero, es necesario ver el codigo.
 
 Tambien observar como es el codigo en SASS.
