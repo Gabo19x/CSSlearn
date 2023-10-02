@@ -11,5 +11,6 @@
 7. **Transiciones:** ejemplos visuales de como usar transition.
 8. **Animaciones:** ejemplos visuales de su forma de uso.
 9. **Overflow:** ejemplos visuales pero, es necesario ver el codigo.
+10. **Grid:** ejemplos de formas de usar GRID.
 
 Tambien observar como es el codigo en SASS.
