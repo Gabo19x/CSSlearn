@@ -1,0 +1,51 @@
+@import "../styleindex.scss";
+
+// Pafina sombras
+main {
+    display: block;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        figure {
+            height: 300px;
+            width: 300px;
+            background-color: $colorRojo;
+            border-radius: $radioBorde;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p { 
+                padding: 0 $margen;
+            }
+        }
+    }
+}
+
+// Clases
+/* MIXIN Sombra
+    Genera una sombra segun unos parametros
+    @params 
+        posX: posicion x. posY: posicion en y. 
+        deg: el degradado. cre: valor de crecimiento.
+        color.
+*/
+@mixin Sombra($posX, $posY, $deg: 0, $cre: 0, $color: black) {
+    box-shadow: $posX $posY $deg $cre $color;
+}
+
+.Sombra1 { @include Sombra(15px, 15px); }
+.Sombra2 { @include Sombra(15px, 15px, 10px); }
+.Sombra3 { @include Sombra(15px, 15px, 10px, 20px); }
+.Sombra4 { @include Sombra(0, 3rem, 2rem); }
+.Sombra5 { 
+    box-shadow: 30px 0 3rem, 
+    0 30px 3rem $colorTerciario, 
+    -30px 0 3rem, 
+    0 -30px 3rem $colorTerciario; 
+}
+.Sombra6 { @include Sombra(60px, 60px, 10px); }

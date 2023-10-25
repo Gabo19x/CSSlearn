@@ -1,0 +1,37 @@
+@import "../styleindex.scss";
+
+// Pagina gradiente
+main{
+    display: block;
+    
+    h1 {
+        margin: $margen;
+        width: auto;
+    }
+
+    figure{
+        width: auto;
+        height: 300px;
+        border-radius: $radioBorde;
+        margin: $margen;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        code{
+            padding: 0.2rem;
+        }
+    }
+}
+
+// Clases
+.Figura1 {  background: linear-gradient(45deg, red, orange); }
+.Figura2 {  background: linear-gradient(90deg, rgb(0, 255, 106), rgb(0, 189, 79), rgb(0, 121, 50)); }
+.Figura3 {  background: linear-gradient(180deg, rgb(140, 0, 153), rgb(200, 140, 206)); }
+.Figura4 {  background: linear-gradient(270deg, rgb(0, 22, 117), rgb(37, 61, 170), rgb(73, 97, 202), rgb(136, 157, 248)); }
+
+.Figura5 {  background: linear-gradient(45deg, red 70%, rgb(255, 255, 255)); }
+.Figura6 {  background: linear-gradient(to top, rgb(228, 253, 0) 50%, rgb(0, 0, 0)); }
+.Figura7 {  background: linear-gradient(to bottom, rgb(221, 221, 221), rgb(168, 168, 168), rgb(83, 83, 83), rgb(0, 0, 0)); }
+.Figura8 {  background: linear-gradient(129deg, rgb(28, 134, 72) 70%, rgb(114, 155, 1) 30%); }

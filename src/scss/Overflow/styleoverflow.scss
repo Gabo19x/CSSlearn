@@ -1,0 +1,99 @@
+@import "../styleindex.scss";
+
+// Pafina sombras
+main {
+    display: block;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 100px;
+
+        figure {
+            height: 300px;
+            width: 300px;
+            border-radius: $radioBorde;
+
+            display: block;
+            align-items: baseline;
+            justify-content: center;
+
+            p { 
+                padding: 0 $margen;
+            }
+
+            code { 
+                padding: 0 $margen;
+            }
+        }
+    }
+}
+
+// Clases Seccion 1
+.Obj1 { // Este es el default y desborda el contenido
+    overflow: visible; 
+    overflow-anchor: auto;
+    background-color: $colorAzul; 
+} 
+.Obj2 { // Este oculta el contenido sobrante y se puede animar
+    overflow: hidden; 
+    overflow-anchor: auto;
+    background-color: $colorAmarillo; 
+} 
+.Obj3 { // Este oculta el contenido y no se puede animar
+    overflow: clip;
+    overflow-anchor: auto; 
+    background-color: $colorAzul; 
+} 
+.Obj4 { // Este activa la posibilidad de hacer scroll
+    overflow: scroll; 
+    overflow-anchor: none; 
+    background-color: $colorAmarillo; 
+} 
+.Obj5 { // Este se adapta segun la situacion
+    overflow: auto;
+    overflow-anchor: none;  
+    background-color: $colorAzul; 
+} 
+.Obj6 { // Este oculta y activa un scroll
+    overflow: hidden visible;
+    overflow-anchor: none;
+    background-color: $colorAmarillo; 
+} 
+
+// Seccion 2
+.Obj7 { 
+    overflow: auto;
+    overflow-wrap: normal; // Si una palabra es muy grande, no hace nada
+    background-color: $colorRojo; 
+}
+
+.Obj8 { 
+    overflow: auto;
+    overflow-wrap: anywhere; // Si una palabra es muy grande, la recorta donde sea
+    background-color: $colorVerde; 
+}
+
+.Obj9 { 
+    overflow: auto;
+    overflow-wrap: break-word; // Si una palabra es muy grande, la recorta con suavidad
+    background-color: $colorRojo; 
+}
+
+// Seccion 3
+.Obj10 { // Aqui se elije de manera mas especifica en cada eje, en este caso solo cambiamos el eje X
+    overflow-x: hidden;
+    background-color: $colorAmarillo; 
+}
+
+.Obj11 { // En este caso solo cambiamos el eje Y
+    overflow-y: visible;
+    background-color: $colorAzul; 
+}
+
+.Obj12 { // En este caso solo cambiamos los dos ejes
+    overflow-x: scroll;
+    overflow-y: auto;
+    background-color: $colorAmarillo; 
+}

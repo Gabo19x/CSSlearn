@@ -133,4 +133,109 @@ footer nav a:hover, header nav a:hover {
 .Boton_creditos:hover {
   color: #FFFFFF;
   background-color: #AA2323;
-}/*# sourceMappingURL=styleindex.css.map */
+}
+
+main {
+  display: block;
+}
+main h1 {
+  margin: 1rem;
+  width: auto;
+}
+main figure {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #5c5c5c;
+}
+main figure code {
+  padding: 0.8rem;
+}
+
+.Figura1 {
+  background-color: #C97F00;
+  transition: all 2s 0.1s ease;
+}
+.Figura1:hover {
+  background-color: #9c6300;
+  transform: translateX(70vw);
+}
+
+.Figura2 {
+  background-color: #AA2323;
+  transition: all 2s 0.1s ease-in;
+}
+.Figura2:hover {
+  background-color: #741212;
+  transform: translateX(70vw);
+}
+
+.Figura3 {
+  background-color: #6EAB24;
+  transition: all 2s 0.1s ease-out;
+}
+.Figura3:hover {
+  background-color: #588b19;
+  transform: translateX(70vw);
+}
+
+.Figura4 {
+  background-color: #135acc;
+  transition: all 2s 0.1s ease-in-out;
+}
+.Figura4:hover {
+  background-color: #003fa3;
+  transform: translateX(70vw);
+}
+
+.Figura5 {
+  background-color: #C97F00;
+  transition: all 2s 0.1s linear;
+}
+.Figura5:hover {
+  background-color: #9c6300;
+  transform: translateX(70vw);
+}
+
+.Figura6 {
+  width: 300px;
+  background-color: #AA2323;
+  transition: all 5s 0.1s ease-in;
+}
+.Figura6:hover {
+  background-color: #741212;
+  width: 70vw;
+}
+
+.Figura7 {
+  background-color: #6EAB24;
+}
+.Figura7 code {
+  font-size: 18px;
+  transition: all 2s 0.1s linear;
+}
+.Figura7 p {
+  font-size: 18px;
+  transition: all 2s 0.1s linear;
+}
+.Figura7:hover code {
+  color: #1D3557;
+  font-size: 32px;
+}
+.Figura7:hover p {
+  font-size: 28px;
+}
+
+.Figura8 {
+  transform: rotate(0deg);
+  transition: transform 4s 1.5s ease-in-out;
+  background-color: #135acc;
+}
+.Figura8:hover {
+  transform: rotate(360deg);
+}/*# sourceMappingURL=styletransitions.css.map */

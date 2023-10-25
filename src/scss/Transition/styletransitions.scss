@@ -1,0 +1,141 @@
+@import "../styleindex.scss";
+
+// Variables extra
+$view: 70vw;
+
+$colorAmarilloOscuro: #9c6300;
+$colorRojoOscuro: #741212;
+$colorVerdeOscuro: #588b19;
+$colorAzulOscuro: #003fa3;
+
+
+// Pagina transiciones
+main{
+    display: block;
+    
+    h1 {
+        margin: $margen;
+        width: auto;
+    }
+
+    figure{
+        width: 300px;
+        height: 300px;
+        border-radius: $radioBorde;
+        margin: $margen;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $colorTerciario;
+    
+        code{
+            padding: 0.8rem;
+        }
+    }
+}
+
+// Clases con sus respectivas transiciones
+// Figura 1
+.Figura1 { 
+    background-color: $colorAmarillo;
+    transition: all 2s 0.1s ease;
+
+    &:hover{
+        background-color: $colorAmarilloOscuro;
+        transform: translateX($view);
+    }
+}
+
+// Figura 2
+.Figura2 { 
+    background-color: $colorRojo;
+    transition: all 2s 0.1s ease-in;
+
+    &:hover{
+        background-color: $colorRojoOscuro;
+        transform: translateX($view);
+    }
+}
+
+// Figura 3
+.Figura3 { 
+    background-color: $colorVerde;
+    transition: all 2s 0.1s ease-out;
+
+    &:hover{
+        background-color: $colorVerdeOscuro;
+        transform: translateX($view);
+    }
+}
+
+// Figura 4
+.Figura4 { 
+    background-color: $colorAzul;
+    transition: all 2s 0.1s ease-in-out;
+
+    &:hover{
+        background-color: $colorAzulOscuro;
+        transform: translateX($view);
+    }
+}
+
+// Figura 5
+.Figura5 { 
+    background-color: $colorAmarillo;
+    transition: all 2s 0.1s linear;
+
+    &:hover{
+        background-color: $colorAmarilloOscuro;
+        transform: translateX($view);
+    }
+}
+
+// Figura 6
+.Figura6 { 
+    width: 300px;
+    background-color: $colorRojo;
+    transition: all 5s 0.1s ease-in;
+
+    &:hover{
+        background-color: $colorRojoOscuro;
+        width: $view;
+    }
+}
+
+// Figura 7
+.Figura7 { 
+    background-color: $colorVerde;
+    code {
+        font-size: 18px;
+        transition: all 2s 0.1s linear;
+    } 
+
+    p{
+        font-size: 18px;
+        transition: all 2s 0.1s linear; 
+    }
+
+    &:hover{
+        code{
+            color: $colorPrimario;
+            font-size: 32px;
+        }
+
+        p{
+            font-size: 28px;
+        }
+    }
+}
+
+// Figura 8
+.Figura8 { 
+    transform: rotate(0deg);
+    transition: transform 4s 1.5s ease-in-out;
+    background-color: $colorAzul;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

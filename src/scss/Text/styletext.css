@@ -133,4 +133,61 @@ footer nav a:hover, header nav a:hover {
 .Boton_creditos:hover {
   color: #FFFFFF;
   background-color: #AA2323;
-}/*# sourceMappingURL=styleindex.css.map */
+}
+
+main {
+  display: block;
+}
+main #Caja_texto {
+  margin: 3rem 5rem;
+  font-size: 25px;
+  line-height: 3rem;
+  color: white;
+  background-color: #0c0c0c;
+  padding: 3rem;
+  border-radius: 10px;
+}
+main #Caja_texto code {
+  font-size: 27px;
+}
+main #Caja_texto span {
+  font-size: 27px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #C97F00;
+}
+
+.Linea_footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.Texto1 {
+  -webkit-text-decoration: underline #AA2323;
+          text-decoration: underline #AA2323;
+}
+
+.Texto2 {
+  -webkit-text-decoration: underline dotted #AA2323;
+          text-decoration: underline dotted #AA2323;
+}
+
+.Texto3 {
+  -webkit-text-decoration: underline wavy #AA2323;
+          text-decoration: underline wavy #AA2323;
+}
+
+.Texto4 {
+  -webkit-text-decoration: underline overline #AA2323;
+          text-decoration: underline overline #AA2323;
+}
+
+.Texto5 {
+  -webkit-text-decoration: underline dashed #AA2323;
+          text-decoration: underline dashed #AA2323;
+}
+
+.Texto6 {
+  -webkit-text-decoration: underline double #AA2323;
+          text-decoration: underline double #AA2323;
+}/*# sourceMappingURL=styletext.css.map */

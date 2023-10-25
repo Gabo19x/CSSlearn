@@ -133,4 +133,111 @@ footer nav a:hover, header nav a:hover {
 .Boton_creditos:hover {
   color: #FFFFFF;
   background-color: #AA2323;
-}/*# sourceMappingURL=styleindex.css.map */
+}
+
+main {
+  display: block;
+}
+main section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+main section a {
+  background-color: #0c0c0c;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: center;
+}
+main section form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section form label {
+  margin: 2rem;
+  font-weight: bolder;
+  font-size: 20px;
+}
+main section form input {
+  width: 15rem;
+  border: 2px solid black;
+  padding: 0.5rem 0.2rem;
+  background-color: #0c0c0c;
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 18px;
+}
+main section form .Box {
+  height: 50px;
+  width: 50px;
+  border: 50%;
+  background: black;
+  color: #0c0c0c;
+}
+
+.Boton__rojo:hover {
+  background-color: #AA2323;
+  border-radius: 20px;
+}
+
+.Boton__verde:hover {
+  background-color: #6EAB24;
+  border-radius: 20px;
+}
+
+.Final {
+  margin-top: 20vw;
+}
+.Final p {
+  font-size: 22px;
+  margin: 2rem;
+  font-weight: bolder;
+}
+
+.Focus:focus {
+  background-color: #5c5c5c;
+  color: white;
+}
+
+.Box:checked {
+  color: red;
+  background-color: red;
+}
+
+.Opt:optional {
+  border: 2px solid #6EAB24;
+  color: #6EAB24;
+}
+
+.Req:required {
+  border: 2px solid #AA2323;
+  color: #AA2323;
+}
+
+.Elemento1 {
+  font-size: 22px;
+  color: #000000;
+}
+.Elemento1::after {
+  content: " After y va despues.";
+  color: #C97F00;
+  font-weight: bolder;
+}
+.Elemento1::before {
+  content: "Before y va antes. ";
+  color: #135acc;
+  font-weight: bolder;
+}
+
+.Elemento2 {
+  font-size: 22px;
+}
+.Elemento2::first-letter {
+  font-size: 42px;
+}
+.Elemento2::first-line {
+  color: rgb(19, 19, 19);
+}/*# sourceMappingURL=styleclasses.css.map */

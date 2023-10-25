@@ -133,4 +133,67 @@ footer nav a:hover, header nav a:hover {
 .Boton_creditos:hover {
   color: #FFFFFF;
   background-color: #AA2323;
-}/*# sourceMappingURL=styleindex.css.map */
+}
+
+main {
+  display: block;
+}
+main h1 {
+  margin: 1rem;
+}
+main section {
+  margin-bottom: 20rem;
+  margin-top: 10rem;
+  height: 600px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+main section figure {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #5c5c5c;
+  box-shadow: 15px 15px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section figure code {
+  color: #FFFFFF;
+}
+
+.Imagen1 .Imagen2 .Imagen3 {
+  box-shadow: 5px 5px 10px black;
+}
+
+.Imagen2 {
+  position: relative;
+  bottom: -10rem;
+  left: 8rem;
+  background-color: #135acc;
+}
+
+.Imagen3 {
+  position: absolute;
+  top: 20rem;
+  right: 8rem;
+  background-color: #6EAB24;
+}
+
+.Imagen4 {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 12rem;
+  left: 5%;
+  background-color: #AA2323;
+}
+
+.Imagen5 {
+  width: 100px;
+  height: 100px;
+  position: sticky;
+  top: 150px;
+  background-color: #C97F00;
+}/*# sourceMappingURL=styleposition.css.map */

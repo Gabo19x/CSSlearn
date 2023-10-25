@@ -1,0 +1,128 @@
+@import "../styleindex.scss";
+
+// Pagina de pseudoclases y pseudoelementos
+main{
+    display: block;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $margen;
+        margin: 0 $margen;
+
+        a {
+            background-color: $colorTexto;
+            color: white;
+            padding: 1rem;
+            border-radius: $radioBorde;
+            justify-content: center;
+            
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            label { 
+                margin: $margen * 2;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+
+            input {
+                width: 15rem;
+                border: 2px solid black;
+                padding: 0.5rem 0.2rem;
+                background-color: $colorTexto;
+                color: white;
+                margin-top: 0.5rem;
+                font-size: 18px;
+            }
+
+            .Box {
+                height: 50px;
+                width: 50px;
+                border: 50%;
+                background: black;
+                color: $colorTexto;
+            }
+        }
+    }
+}
+
+// Clases
+.Boton__rojo {
+    &:hover {
+        background-color: $colorRojo;
+        border-radius: $radioBorde * 2;
+    }
+}
+
+.Boton__verde {
+    &:hover {
+        background-color: $colorVerde;
+        border-radius: $radioBorde * 2;
+    }
+}
+
+.Final {
+    margin-top: 20vw;
+    
+    p {
+        font-size: 22px; 
+        margin: $margen * 2;
+        font-weight: bolder;
+    }
+}
+
+.Focus:focus {
+    background-color: $colorTerciario;
+    color: white;
+}
+
+.Box:checked {
+    color: red;
+    background-color: red;
+}
+
+.Opt:optional {
+    border: 2px solid $colorVerde;
+    color: $colorVerde;
+}
+
+.Req:required {
+    border: 2px solid $colorRojo;
+    color: $colorRojo;
+}
+
+// Este lemento afectado por 2 pseudoelementos
+.Elemento1 {
+    font-size: 22px;
+    color: $colorNegro;
+    
+    &::after {
+        content: " After y va despues.";
+        color: $colorAmarillo;
+        font-weight: bolder;
+    }
+    
+    &::before {
+        content: "Before y va antes. ";
+        color: $colorAzul;
+        font-weight: bolder;
+    }    
+}
+
+// Este lemento afectado por 2 pseudoelementos
+.Elemento2 {
+    font-size: 22px;
+
+    &::first-letter {
+        font-size: 42px
+    }
+
+    &::first-line {
+        color: rgb(19, 19, 19);
+    }
+}

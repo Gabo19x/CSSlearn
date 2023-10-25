@@ -4,7 +4,7 @@
 $margen: 1rem;
 $radioBorde: 10px; 
 
-$colorPrimario: #455A64;
+$colorPrimario: #1D3557;
 $colorSecundario: #CFD8DC;
 $colorTerciario: #5c5c5c;
 
@@ -12,15 +12,21 @@ $colorBlanco: #FFFFFF;
 $colorNegro: #000000;
 
 $colorTexto: #0c0c0c;
+$colorTexto2: #83b8da;
 
 $colorAmarillo: #C97F00;
 $colorRojo: #AA2323;
 $colorVerde: #6EAB24;
 $colorAzul: #135acc;
 
-$colorCuaternario: #BDBDBD;
+$colorCuaternario: #A8DADC;
 
 // Globales
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 a { 
     background-color: $colorTexto;
     color: $colorBlanco;
@@ -34,14 +40,14 @@ a {
 p { 
     font-size: 22px; 
     margin: $margen;
-    color: $colorTexto;
+    color: $colorBlanco;
 }
 
 h1 { 
     font-size: 60px; 
     font-weight: 800;
     margin: $margen;
-    color: $colorTexto;
+    color: $colorTexto2;
 }
 
 code { 
@@ -64,7 +70,7 @@ body {
 // encabezado de las paginas
 .Linea {
     @extend %template_linea;
-    height: 20rem;
+    height: auto;
     margin: 0 0 3rem 0;
 
     .Boton_enlace {
@@ -81,12 +87,17 @@ body {
             
         }
     }
+
+    code { color: $colorTexto2; }
 }
 
 .Linea_footer {
     @extend %template_linea;
-    height: 5vw;
+    height: auto;
+    padding: ($margen * 2) 0;
     margin: $margen 0 0 0;
+    position: relative;
+    bottom: -100%;
 }
 
 // Navegacion
@@ -125,7 +136,7 @@ footer { @extend %template_navegacion; }
         color: $colorBlanco;
         border-radius: $radioBorde;
 
-        padding: $margen;
+        padding: ($margen /2) ($margen * 2);
         
     }
 }
@@ -134,3 +145,18 @@ footer { @extend %template_navegacion; }
 .Boton_amarillo:hover { background-color: $colorAmarillo; }
 .Boton_verde:hover { background-color: $colorVerde; }
 .Boton_azul:hover { background-color: $colorAzul; }
+
+.Boton_creditos {
+    border: $colorBlanco 2px solid;
+    background-color: $colorPrimario;
+    color: $colorBlanco;
+    margin: ($margen/2) $margen;
+    height: auto;
+    transition: all 1.2s ease; 
+
+    &:hover {
+        color: $colorBlanco;
+        background-color: $colorRojo;
+        
+    }
+}
