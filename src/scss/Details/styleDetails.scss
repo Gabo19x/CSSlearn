@@ -1,0 +1,82 @@
+@import "../styleindex.scss";
+
+section {
+    display: block;
+
+    padding: 40px;
+    margin-top: 20px;
+}
+
+// Detail global
+details {
+    cursor: pointer;
+    font-size: 30px;
+    color: $colorTexto;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    summary{
+        border-radius: 5px;
+        padding: 10px;
+        color: $colorBlanco;
+    }
+
+    p {
+        color: $colorTexto;
+    }
+}
+
+// Obetos especificos
+.Obj-rojo {
+    border: 2px solid $colorRojo;
+
+    summary {
+        background-color: $colorRojo;
+    }
+}
+
+.Obj-amarillo {
+    border: 2px solid $colorAmarillo;
+
+    summary {
+        background-color: $colorAmarillo;
+    }
+}
+
+.Obj1 {
+    border: none;
+
+    summary {
+        width: 700px;
+        list-style-type: none;
+    }
+
+    p {
+        width: 1300px;
+    }
+}
+
+.Obj-verde {
+    border: 2px solid $colorVerde;
+
+    summary {
+        background-color: $colorVerde;
+    }
+}
+
+.Obj-azul {
+    border: 2px solid $colorAzul;
+
+    summary {
+        background-color: $colorAzul;
+    }
+}
+
+.Obj2 {
+    summary {
+        // list-style: disc; Esta propiedad pone afuera la imagen.
+        list-style-type: disc; // mientras que este, lo pone adentro
+    }
+}

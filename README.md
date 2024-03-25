@@ -12,5 +12,6 @@
 8. **Animaciones:** ejemplos visuales de su forma de uso.
 9. **Overflow:** ejemplos visuales pero, es necesario ver el codigo.
 10. **Grid:** ejemplos de formas de usar GRID.
+11. **Details** ejemplos de uso de la etiqueta <details><details/>.
 
 Tambien observar como es el codigo en SASS.

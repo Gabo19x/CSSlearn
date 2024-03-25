@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta details</title>
+    <link rel="shortcut icon" href="assets/AsteroidePequeño.png"> <!--Imagen FAvicon-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="scss/styleindex.css">
+    <link rel="stylesheet" href="scss/Details/styleDetails.css">
+</head>
+<body>
+    <!-- Esta es la pagina de la etiqueta details -->
+    <main>
+        <div class="Linea">
+            <h1>Uso de a etiqueta details</h1>
+            <p>Son etiquetas las cuales podemos compactar información con un menu desplegable.</p>
+    
+            <header>
+                <nav>
+                    <a class="Boton_enlace" href="https://github.com/Gabo19x/CSSlearn/tree/main">Codigo fuente!</a> 
+                    <a href="index.html">Volver</a>  
+                </nav>
+            </header>
+        </div>
+
+        <section>
+            <details class="Obj-rojo">
+                <summary>¿Cómo funciona?</summary>
+                <p>Como un elemento desplegable, para mas dinamismo.</p>
+            </details>
+
+            <details class="Obj-amarillo">
+                <summary>Diseño</summary>
+                <p>El diseño se vuelve mas complejo, ya que debes tener en cuenta dos a mas elementos.
+                    Como las etiquetas de este ejemplo: details - summary - p.
+                </p>
+            </details>
+
+            <details class="Obj-rojo">
+                <summary>Composición</summary>
+                <p>Tenemos el contenedor, que es details, su encabezado que se muestra de antemano: summary.
+                    Y un hijo, en este ejemplo es un parrafo.
+                </p>
+            </details>
+
+            <details class="Obj-amarillo Obj1">
+                <summary>Ejemplo con diseño diferente</summary>
+                <p>En este hay diferentes tamaños. Y sin decorados: no tiene el triangulo por default y el parrado es más grande.</p>
+            </details>
+        </section>
+
+        <section>
+            <details class="Obj-verde Obj2" name="info" open>
+                <summary>Details unidos</summary>
+                <p>Este y los dos de abajo. Estan conectados por la propiedad de HTML <code>'name'</code> lo que hace que solo pueda estar uno abierto.
+                    Ademas de que este elemento esta abierto desde el inicio por otra propiedad <code>'open'</code>.
+                </p>
+                <p>Algo a tener en cuenta, es que a la fecha de hoy (20/3/24), no todos los navegadores soportan esta opcion.</p>
+            </details>
+
+            <details class="Obj-azul Obj2" name="info">
+                <summary>Details unidos</summary>
+                <p> Elemento numero 2.</p>
+            </details>
+
+            <details class="Obj-verde Obj2" name="info">
+                <summary>Details unidos</summary>
+                <p> Elemento numero 3.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer class="Linea_footer">
+        <nav><a href="index.html">Volver</a></nav>
+    </footer>
+</body>
+</html>
