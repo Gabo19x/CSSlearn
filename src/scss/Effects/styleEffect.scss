@@ -1,0 +1,69 @@
+@import "../styleindex.scss";
+
+.Figuras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $margen;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        background-color: $colorAmarillo;
+        border-radius: $radioBorde;
+
+        img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+}
+
+// Figuras
+.Figura1 .Figura-cambio div {
+
+    img { mix-blend-mode: plus-lighter; }
+}
+
+.Figura2 .Figura-cambio div {
+    img { mix-blend-mode: color-burn; }
+}
+
+.Figura3 .Figura-cambio div {
+    img { mix-blend-mode: multiply; }
+}
+
+.Figura4 .Figura-cambio div {
+    img { mix-blend-mode: hard-light; }
+}
+
+.Figura5 .Figura-cambio div {
+    img { mix-blend-mode: difference; }
+}
+
+.Figura6 .Figura-cambio div {
+    img { mix-blend-mode: screen; }
+}
+
+.Figura7 .Figura-cambio div {
+    img { mix-blend-mode: overlay; }
+}
+
+.Figura8 .Figura-cambio div {
+    img { mix-blend-mode: darken; }
+}
+.Figura9 .Figura-cambio div {
+    img { mix-blend-mode: lighten; }
+}
+
+.Figura10 .Figura-cambio div {
+    img { mix-blend-mode: hue; }
+}
